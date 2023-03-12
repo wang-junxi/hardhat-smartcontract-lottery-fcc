@@ -8,6 +8,6 @@ module.exports = async function ({ deployments, getNamedAccounts }) {
     const chainId = network.config.chainId
     if (devChains.includes(network.name)) {
         log("Local network detected! Deploying mocks...")
-        // deploy a mock vfrCoordinator...
+        // deploy a mock vfrCoordinator
     }
 }
