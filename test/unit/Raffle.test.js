@@ -83,7 +83,7 @@ const { devChains, networkConfig } = require("../../helper-hardhat-config")
                   assert(!upkeepNeeded)
               })
 
-              it("returns true if enough time has passed, has players, has eth, and is open", async () => {
+              it("returns true if enough time has passed, has players, has ETH, and is open", async () => {
                   await raffle.enterRaffle({ value: entranceFee })
                   await network.provider.send("evm_increaseTime", [interval.toNumber() + 1])
                   await network.provider.send("evm_mine", [])
