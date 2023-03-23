@@ -27,6 +27,11 @@ module.exports = {
             accounts: [PRIVATE_KEY],
         },
     },
+    etherscan: {
+        apiKey: {
+            goerli: ETHERSCAN_API_KEY,
+        },
+    },
     namedAccounts: {
         deployer: {
             default: 0,
@@ -37,9 +42,10 @@ module.exports = {
     },
     gasReporter: {
         enabled: false,
+        noColors: true,
         currency: "USD",
         outputFile: "gas-report.txt",
-        noColors: true,
+        // coinmarketcap: COINMARKETCAP_API_KEY,
     },
     mocha: {
         timeout: 300000, // 300s
