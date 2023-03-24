@@ -51,7 +51,6 @@ devChains.includes(network.name)
 
                       // enter the raffle
                       console.log("Entering Raffle...")
-                      console.log(">>> raffle >>>", raffle)
                       const tx = await raffle.enterRaffle({ value: entranceFee })
                       await tx.wait(1)
 
